@@ -8,7 +8,7 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(features= {"@target/failedrerun.txt"},
 					glue= {"com/star/webApp/stepDefinationFiles"},
-					plugin= {"pretty","html:target/faileTestReport.html"},
+					plugin= {"pretty","html:target/faileTestReport.html","json:target/failedTestReport.json"},
 					monochrome=true
 					)
 public class RunnerFailed {

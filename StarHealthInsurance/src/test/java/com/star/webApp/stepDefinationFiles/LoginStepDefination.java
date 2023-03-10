@@ -5,6 +5,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+import org.junit.Assert;
+
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -21,6 +23,7 @@ public class LoginStepDefination {
 	public void click_on_retail_customer() {
 	    // Write code here that turns the phrase above into concrete actions
 	   System.out.println("click on Retail customer");
+	   Assert.assertTrue(false);
 	}
 
 	@When("he enters the email Id and passwords as")
